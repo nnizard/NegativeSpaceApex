@@ -1,6 +1,3 @@
-/**
- * @description there is no fail test there because they cannot be catched, meaning that the test would always fail
- */
 @isTest
 private with sharing class NegativeSpaceDelimiter_UT {
     @isTest
@@ -11,7 +8,7 @@ private with sharing class NegativeSpaceDelimiter_UT {
     }
 
     /**
-     * @description return true if the object is an Integer
+     * @description validates that an object is an Integer
      */
     private class dummyIntegerSpaceDefinition implements IPositiveSpaceDefinition{
         public Boolean isOfCorrectShape(Object item){
@@ -20,7 +17,7 @@ private with sharing class NegativeSpaceDelimiter_UT {
     }
 
     /**
-     * @description return true if the value of object is > 5
+     * @description validates that the value of an object is > 5
      */
     private class dummyBigIntegerSpaceDefinition implements IPositiveSpaceDefinition{
         public Boolean isOfCorrectShape(Object item){
